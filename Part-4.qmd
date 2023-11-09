@@ -1,0 +1,50 @@
+---
+title: "Part-4"
+editor: visual
+---
+
+1.  Use [`wget`](https://www.gnu.org/software/wget) to download four files that end in `.fastq` from [here](https://github.com/stephaniehicks/jhustatprogramming2023/tree/main/data).
+
+```{bash}
+wget https://raw.githubusercontent.com/stephaniehicks/jhustatprogramming2023/main/data/SRR1039508_subset_1.fastq
+wget https://raw.githubusercontent.com/stephaniehicks/jhustatprogramming2023/main/data/SRR1039509_subset_1.fastq
+wget https://raw.githubusercontent.com/stephaniehicks/jhustatprogramming2023/main/data/SRR1039512_subset_1.fastq
+wget https://raw.githubusercontent.com/stephaniehicks/jhustatprogramming2023/main/data/SRR1039513_subset_1.fastq
+```
+
+-   Wildcards cannot be used directly in wget to batch download files that match a particular name pattern, because wget does not parse the list of files on the server.
+
+2.  Create a directory to download the data. The top level directory should be called `raw_data` and there should be a sub-level directory called `fastq`. The command you write should force the creation of both directories at the same time if either of them do not exist yet.
+
+```{bash}
+mkdir -p data_raw/fastq
+```
+
+3.  Move all the `.fastq` files into the `fastq` sub-level directory.
+
+```{bash}
+mv *.fastq data_raw/fastq
+```
+
+4.  List all the `.fastq` files that end in a 12 or 13.
+
+```{bash}
+cd data_raw/fastq/
+ls -al *12_subset_1.fastq *13_subset_1.fastq
+```
+
+5.  Search for the string `NNNN` in the `SRR1039512_subset_1.fastq` file. In addition to returning the matched line in the `.fastq` file, your output should also return the two lines before and the four lines after the matching line.\
+
+```{bash}
+grep -i -A 4 -B 2 'NNNN' data_raw/fastq/SRR1039512_subset_1.fastq 
+```
+
+6.  Write a for loop in the shell that iterates over each `.fastq` file. For each `.fastq` file, do the following. In the first 1000 rows for each file, count the number of lines where the "\@" symbol appears. Your final output should be four numbers printed to the screen.
+
+```{bash}
+for file in data_raw/fastq/*.fastq
+do
+  echo -n $file: 
+  head -n 1000 $file | grep -i '@' | wc -l
+done
+```

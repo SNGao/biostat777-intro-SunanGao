@@ -1,0 +1,33 @@
+---
+title: "Sunan Gao"
+image: SunanGao.jpg
+about:
+  template: trestles
+  image-shape: round
+  image-width: 20em
+  links:
+    - text: LinkedIn
+      href: https://www.linkedin.com/in/sunangao?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BkZu0rYJITM6caxvvHodJCA%3D%3D
+    - text: Instagram
+      href: https://instagram.com/sunan.gao?igshid=YTQwZjQ0NmI0OA%3D%3D&utm_source=qr
+    - text: ResearchGate
+      href: https://www.researchgate.net/profile/Sunan-Gao
+---
+
+#### [**Biography**]{.smallcaps}
+
+| Hi! I'm Sunan Gao, currently a master student at Johns Hopkins University, focusing on Epidemiology & Biostatistics & Bioinformatics in Aging.
+
+------------------------------------------------------------------------
+
+#### [**Education**]{.smallcaps}
+
+| MS. Student (2023- ) \| Johns Hopkins University
+| MS. Stundet (2022-2023, transfer) \| Renmin University of China
+| Bachelor of Enginnering (2018-2022) \| Zhejiang University
+
+------------------------------------------------------------------------
+
+#### [**Related URL**]{.smallcaps}
+
+[**Github** **repository**](https://github.com/SNGao/biostat840-intro-Sunan-Gao)

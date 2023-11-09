@@ -1,0 +1,27 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Sunan Gao"
+  navbar:
+    background: dark
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+      - Reflection.qmd
+      - example_analysis.qmd
+      - Data_Dictionary.qmd
+      - Part-4.qmd
+
+format:
+  html:
+    theme:
+      light: minty
+      dark: solar
+    css: styles.css
+    toc: true
+
+editor: visual
+bibliography: ref_project1.bib
