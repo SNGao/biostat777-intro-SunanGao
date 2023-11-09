@@ -1,6 +1,6 @@
 # biostat777-intro-SunanGao
 Author: Sunan Gao
-Link: https://sngao.github.io/biostat840-intro-Sunan-Gao2/example_analysis.html
+Link: https://sngao.github.io/biostat777-intro-SunanGao/
 -------------------------------------------------------
 Version: R 4.1.2
 IDE: R Studio (2022.07.1+554)
