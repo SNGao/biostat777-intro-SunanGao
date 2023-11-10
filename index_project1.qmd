@@ -23,7 +23,7 @@ Please use this Quarto file (`.qmd`) and fill in the requested components by add
 
 Complete the Git & GitHub Fundamentals Starter course. The link to create a private GitHub repository for yourself to complete the course will be posted in CoursePlus. When you are done, add the link to the GitHub repo here:
 
--   **Link to your GitHub repository**: \[https://github.com/jhu-statprogramming-fall-2023/git-github-fundamentals-SNGao\]
+-   **Link to your GitHub repository**: [Link](https://github.com/jhu-statprogramming-fall-2023/git-github-fundamentals-SNGao)
 
 # Part 2
 
@@ -89,13 +89,19 @@ Go to the Discussion Board in CoursePlus and write a short post with a link (URL
 
 As you read the introductions from other folks in the class, feel free to comment/reply using Discussion board.
 
--   **Link to your GitHub repository**:[GitHub repository of Sunan Gao](https://github.com/SNGao/biostat777-intro-SunanGao)
+-   **Link to your GitHub repository**: [GitHub repository of Sunan Gao](https://github.com/SNGao/biostat777-intro-SunanGao)
 
 -   **Link to your deployed website**: [Personal website of Sunan Gao](https://sngao.github.io/biostat777-intro-SunanGao)
 
 # Part 4
 
 1.  Use [`wget`](https://www.gnu.org/software/wget) to download four files that end in `.fastq` from [here](https://github.com/stephaniehicks/jhustatprogramming2023/tree/main/data).
+
+::: callout-note
+-   Wildcards cannot be used directly in wget to batch download files that match a particular name pattern, because wget does not parse the list of files on the server.
+-   In fact, we can use extra plugin to batch download files with wildcards, but it may not work in other computing platform. Thus, basic command line will be my preferred choice.
+-   Here, I adopted 'cd \~/Desktop/' to avoid file management mess, and it makes easier to show.
+:::
 
 ```{bash}
 #### download from 
@@ -106,11 +112,6 @@ wget https://raw.githubusercontent.com/stephaniehicks/jhustatprogramming2023/mai
 wget https://raw.githubusercontent.com/stephaniehicks/jhustatprogramming2023/main/data/SRR1039513_subset_1.fastq
 ```
 
-::: callout-note
--   Wildcards cannot be used directly in wget to batch download files that match a particular name pattern, because wget does not parse the list of files on the server.
--   In fact, we can use extra plugin to batch download files with wildcards, but it may not work in other computing platform. Thus, basic command line will be my preferred choice.
--   Here, I adopted 'cd \~/Desktop/' to avoid file management mess, and it makes easier to show.
-:::
 
 2.  Create a directory to download the data. The top level directory should be called `raw_data` and there should be a sub-level directory called `fastq`. The command you write should force the creation of both directories at the same time if either of them do not exist yet.
 
