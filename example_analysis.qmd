@@ -41,19 +41,20 @@ Data was manually assembled by Steve Miller, of Inquidia Consulting. From the Ma
 
 #### Data dictionary
 
-| Variable   | Class     | Description |
-|------------|-----------|------------------------------------------------|
-| year       | integer   | Year that wage information was recorded |
-| age        | integer   | Age of worker  |
-| maritl     | factor | A factor with levels `1. Never Married` `2. Married` `3. Widowed` `4. Divorced` and `5. Separated` indicating marital status |
-| race       | factor | A factor with levels `1. White` `2. Black` `3. Asian` and `4. Other` indicating race |
-| education  | factor | A factor with levels `1. < HS Grad` `2. HS Grad` `3. Some College` `4. College Grad` and `5. Advanced Degree` indicating education level |
-| region     | factor | Region of the country (mid-atlantic only)|
-| jobclass   | factor | A factor with levels `1. Industrial` and `2. Information` indicating type of job |
-| health     | factor | A factor with levels `1. <=Good` and `2. >=Very Good` indicating health level of worker |
-| health_ins | factor | A factor with levels `1. Yes` and `2. No` indicating whether worker has health insurance |
-| logwage    | numeric    | Log of workers wage |
-| wage       | numeric     | Workers raw wage |
+| Variable   | Class   | Description                                                                                                                              |
+|--------------|--------------|-------------------------------------------|
+| year       | integer | Year that wage information was recorded                                                                                                  |
+| age        | integer | Age of worker                                                                                                                            |
+| maritl     | factor  | A factor with levels `1. Never Married` `2. Married` `3. Widowed` `4. Divorced` and `5. Separated` indicating marital status             |
+| race       | factor  | A factor with levels `1. White` `2. Black` `3. Asian` and `4. Other` indicating race                                                     |
+| education  | factor  | A factor with levels `1. < HS Grad` `2. HS Grad` `3. Some College` `4. College Grad` and `5. Advanced Degree` indicating education level |
+| region     | factor  | Region of the country (mid-atlantic only)                                                                                                |
+| jobclass   | factor  | A factor with levels `1. Industrial` and `2. Information` indicating type of job                                                         |
+| health     | factor  | A factor with levels `1. <=Good` and `2. >=Very Good` indicating health level of worker                                                  |
+| health_ins | factor  | A factor with levels `1. Yes` and `2. No` indicating whether worker has health insurance                                                 |
+| logwage    | numeric | Log of workers wage                                                                                                                      |
+| wage       | numeric | Workers raw wage                                                                                                                         |
+
 : Table: Data Dictionary {.striped .hover}
 
 [Data Dictionary](./Data%20Dictionary.qmd)
@@ -96,6 +97,7 @@ Wage %>%
        caption = "Data source: Wage data was manually assembled by Steve Miller",
        x = "Age", y = "Wage") + theme_minimal()
 ```
+
 -   Wage rises gradually between the ages of 20 and 40, gradually stabilizes after the age of 40, and gradually declines after the age of 60. There is a clear rise around age 75, probably because the data sample is smaller. On the whole, age and wage do not show a linear increase relationship, but a non-linear increase.
 
 ```{r, warning=FALSE}
@@ -108,8 +110,8 @@ Wage %>%
        x = "Age", y = "Effective Wage Number") +
   theme_minimal()
 ```
--   The effective wage number under different age shows really distinctive number. The number between people aged 23 and 63 is relatively stable and sufficient. Thus, it should be payed more attention in this number distribution, which might influence association results between exposure and outcome variables.
 
+-   The effective wage number under different age shows really distinctive number. The number between people aged 23 and 63 is relatively stable and sufficient. Thus, it should be payed more attention in this number distribution, which might influence association results between exposure and outcome variables.
 
 ```{r, warning=FALSE}
 Wage %>% 

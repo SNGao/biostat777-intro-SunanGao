@@ -106,7 +106,7 @@ wget https://raw.githubusercontent.com/stephaniehicks/jhustatprogramming2023/mai
 wget https://raw.githubusercontent.com/stephaniehicks/jhustatprogramming2023/main/data/SRR1039513_subset_1.fastq
 ```
 
-::: callout-warning
+::: callout-note
 -   Wildcards cannot be used directly in wget to batch download files that match a particular name pattern, because wget does not parse the list of files on the server.
 -   In fact, we can use extra plugin to batch download files with wildcards, but it may not work in other computing platform. Thus, basic command line will be my preferred choice.
 -   Here, I adopted 'cd \~/Desktop/' to avoid file management mess, and it makes easier to show.

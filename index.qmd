@@ -30,4 +30,4 @@ about:
 
 #### [**Related URL**]{.smallcaps}
 
-[**Github** **repository**](https://github.com/SNGao/biostat840-intro-Sunan-Gao)
+[**Github** **repository**](https://github.com/SNGao/biostat777-intro-SunanGao)
