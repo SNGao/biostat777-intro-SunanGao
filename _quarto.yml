@@ -10,10 +10,8 @@ website:
       - href: index.qmd
         text: Home
       - about.qmd
-      - Reflection.qmd
       - example_analysis.qmd
       - Data_Dictionary.qmd
-      - Part-4.qmd
 
 format:
   html:
